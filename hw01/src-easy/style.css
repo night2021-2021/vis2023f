@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 8px;
+}
+.center {
+    text-align: left;
+    /*text-shadow: #000;*/
+}
+
+th {
+    background-color: #6495ED; /* 標題背景色 */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* 隔行換色 */
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
