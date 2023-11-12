@@ -1,0 +1,14 @@
+{
+  "name": "1e3d801f6289c509",
+  "main": "1e3d801f6289c509@11.js",
+  "version": "11.0.0",
+  "homepage": "https://observablehq.com/d/1e3d801f6289c509",
+  "author": {
+    "name": "Kasimu's Workspace",
+    "url": "https://observablehq.com/@kasimu-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
