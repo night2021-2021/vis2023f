@@ -187,11 +187,11 @@
 <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <a href="https://github.com/night2021-2021/vis2023f/hw02/src/simple">simple </a>
+      <a href="https://github.com/night2021-2021/vis2023f/tree/main/hw02/src/simple">simple </a>
       <hr>
-      <a href="https://github.com/night2021-2021/vis2023f/hw02/src/medium">medium </a>   
+      <a href="https://github.com/night2021-2021/vis2023f/tree/main/hw02/src/medium">medium </a>   
       <hr>
-      <a href="https://github.com/night2021-2021/vis2023f/hw02/src/strong">strong </a>
+      <a href="https://github.com/night2021-2021/vis2023f/tree/main/hw02/src/strong">strong </a>
     </div>
 
 <!-- ------------------------------------------------>
@@ -324,56 +324,55 @@
   <!-- ------------------------------------------------>
 
 
-<script>
-  $(function() {
-    var f = function() {
-      $(this).next().text($(this).is(':checked') ? '做完' : '未做完');
-    };
-    $('input').change(f).trigger('change');
-  });
-
-  d3.select("#myCheckbox1").on("change",update);
-  d3.select("#myCheckbox2").on("change",update);
-  d3.select("#myCheckbox3").on("change",update);
-  d3.select("#myCheckbox4").on("change",update);
-  d3.select("#myCheckbox5").on("change",update);
-  d3.select("#myCheckbox6").on("change",update);
-  d3.select("#myCheckbox7").on("change",update);
-
-  update();
+  <script>
+    $(function() {
+      var f = function() {
+        $(this).next().text($(this).is(':checked') ? '做完' : '未做完');
+      };
+      $('input').change(f).trigger('change');
+    });
   
-  function update(){
-
-    var score = 0;
-
-    if (d3.select("#myCheckbox1").property("checked")){
-      score += parseInt(d3.select('#m1').html());
+    d3.select("#myCheckbox1").on("change",update);
+    d3.select("#myCheckbox2").on("change",update);
+    d3.select("#myCheckbox3").on("change",update);
+    d3.select("#myCheckbox4").on("change",update);
+    d3.select("#myCheckbox5").on("change",update);
+    d3.select("#myCheckbox6").on("change",update);
+    d3.select("#myCheckbox7").on("change",update);
+  
+    update();
+    
+    function update(){
+  
+      var score = 0;
+  
+      if (d3.select("#myCheckbox1").property("checked")){
+        score += parseInt(d3.select('#m1').html());
+      }
+  
+      if (d3.select("#myCheckbox2").property("checked")){
+        score += parseInt(d3.select('#m2').html());   
+      }
+  
+      if (d3.select("#myCheckbox3").property("checked")){
+        score += parseInt(d3.select('#m3').html());   
+      }
+  
+      if (d3.select("#myCheckbox4").property("checked")){
+        score += parseInt(d3.select('#m4').html());
+      }
+  
+      if (d3.select("#myCheckbox5").property("checked")){
+        score += parseInt(d3.select('#m5').html());   
+      }
+  
+      if (d3.select("#myCheckbox6").property("checked")){
+        score += parseInt(d3.select('#m6').html());   
+      }
+  
+      d3.select("#myTotal").html(score);    
     }
-
-    if (d3.select("#myCheckbox2").property("checked")){
-      score += parseInt(d3.select('#m2').html());   
-    }
-
-    if (d3.select("#myCheckbox3").property("checked")){
-      score += parseInt(d3.select('#m3').html());   
-    }
-
-    if (d3.select("#myCheckbox4").property("checked")){
-      score += parseInt(d3.select('#m4').html());
-    }
-
-    if (d3.select("#myCheckbox5").property("checked")){
-      score += parseInt(d3.select('#m5').html());   
-    }
-
-    if (d3.select("#myCheckbox6").property("checked")){
-      score += parseInt(d3.select('#m6').html());   
-    }
-
-    d3.select("#myTotal").html(score);    
-  }
-
-</script>
+  </script>
 
 </body>
 </html>
