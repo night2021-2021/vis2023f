@@ -18,13 +18,12 @@ function _studentList(studentArray,students,homework)
 {
   studentArray.length = 0;
   students.forEach(row => {
-    let Name = row["姓名"];
-    let Num = row["序號"]
-    for (let i = 0; i < 10; i++) {
-      studentArray.push({
+    let Num = row["序號"]  //學生號碼
+    for (let i = 0; i < 10; i++) {     //從第一項作業遍歷至第十項
+      studentArray.push({    //遍歷數據抓取信息
         Num: Num,
         HW: i + 1,
-        value: row[homework[i]]
+        value: row[homework[i]]    //抓取成績
       });
     }
   });
