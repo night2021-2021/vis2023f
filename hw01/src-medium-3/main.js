@@ -98,7 +98,7 @@ function CreateTable() {
                 let img = document.createElement('img');
                 img.src = `../Image/${data[i][j]}.svg`; // 假设您的图片位于同一目录，并以分数命名
                 img.alt = 'Score Image';
-                img.className = 'score-image'; // 确保您有相应的 CSS 类来控制图片大小等样式
+                img.className = 'score-image'; 
                 cell.appendChild(img);
             } else {
                 cell.innerText = data[i][j];
@@ -109,4 +109,4 @@ function CreateTable() {
 }
 document.addEventListener('DOMContentLoaded', CreateTable);
 // 确保在页面加载完毕后调用 CreateTable 函数
-window.onload = CreateTable;
+//window.onload = CreateTable;

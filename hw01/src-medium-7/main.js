@@ -109,4 +109,4 @@ function CreateTable() {
 }
 document.addEventListener('DOMContentLoaded', CreateTable);
 // 确保在页面加载完毕后调用 CreateTable 函数
-window.onload = CreateTable;
+//window.onload = CreateTable;

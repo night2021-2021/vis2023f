@@ -9,7 +9,7 @@ th, td {
     padding: 8px;
 }
 .center {
-    text-align: left;
+    justify-content: center;
 }
 
 th {
@@ -22,8 +22,10 @@ tr:nth-child(even) {
 }
 
 table {
-    display: block;
+    width: 100%;
+    border-collapse: collapse;
     overflow-x: auto;
+    display: block;
     white-space: nowrap;
 }
 

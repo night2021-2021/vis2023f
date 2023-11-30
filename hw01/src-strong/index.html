@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Use D3js to write another chart</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="main.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-</head>
+<meta charset="utf-8">
+<title>HW1 Strong Baseline **</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
 <body>
-    <div class="center">
-        
-    </div>
-    
-    
-</body>
-</html>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
