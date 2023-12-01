@@ -1,0 +1,14 @@
+{
+  "name": "8553f69c9ae65820",
+  "main": "8553f69c9ae65820@46.js",
+  "version": "46.0.0",
+  "homepage": "https://observablehq.com/d/8553f69c9ae65820",
+  "author": {
+    "name": "Kasimu's Workspace",
+    "url": "https://observablehq.com/@kasimu-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
