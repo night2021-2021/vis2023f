@@ -23,11 +23,3 @@ https://username.github.io/儲存庫名稱/index.html
 ```
 https://username.github.io/儲存庫名稱/檔名.html
 ```
-
-> 舉例：
-
-![image](https://github.com/yungpei/vis2023f/assets/90179068/26f5889a-a603-464a-b834-e875eb3c669c)
-
-```
-https://yungpei.github.io/vis2023f/hw03/src/medium/choropleth.html
-```
